@@ -7,7 +7,7 @@ public class RangedAttackData : AttackSO
 {
     [Header("Ranged Attack Data")]
     public string bulletNameTag;
-    public float duration;
+    public float duration; // 지속 시간
     public float spread; //탄이 퍼지는 정도
     public int numberoProjectilesPerShot; //한번에 쏠 양
     public float multipleProjectilesAngel; //한번에 쏠때 앵글

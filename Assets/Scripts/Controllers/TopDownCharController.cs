@@ -8,7 +8,7 @@ public class TopDownCharController : MonoBehaviour
     // event 외부에서는 호출하지 못하게 막는다?
     public event Action<Vector2> OnMoveEvent;
     public event Action<Vector2> OnLookEvent;
-    public event Action OnAttackEvent;
+    public event Action<AttackSO> OnAttackEvent;
 
     float _timeSinceLastAttact = float.MaxValue;
     protected bool isAttacking {  get; set; }
@@ -36,7 +36,7 @@ public class TopDownCharController : MonoBehaviour
         if(isAttacking && _timeSinceLastAttact > Stats.CurrentStates.attackSO.delay)
         {
             _timeSinceLastAttact = 0f;
-            CallAttackEvent();
+            CallAttackEvent(Stats.CurrentStates.attackSO);
         }
     }
 
@@ -49,9 +49,9 @@ public class TopDownCharController : MonoBehaviour
     {
         OnLookEvent?.Invoke(direction);
     }
-    public void CallAttackEvent()
+    public void CallAttackEvent(AttackSO attackSO)
     {
-        OnAttackEvent?.Invoke();
+        OnAttackEvent?.Invoke(attackSO);
     }
 
     #region 이동 연습
