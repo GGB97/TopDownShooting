@@ -55,7 +55,7 @@ public class RangedAttackController : MonoBehaviour
             HealthSystem healthSystem = collision.GetComponent<HealthSystem>();
             if (healthSystem != null)
             {
-                healthSystem.ChangeHealth(-_attackData.poewr);
+                healthSystem.ChangeHealth(-_attackData.power);
                 if (_attackData.isOnKnockback)
                 {
                     TopDownMovement movement = collision.GetComponent<TopDownMovement>();
@@ -77,7 +77,7 @@ public class RangedAttackController : MonoBehaviour
 
         _trailRenderer.Clear();
         _currentDuration = 0;
-        _spriteRenderer.color = attackData.projectilesColor;
+        _spriteRenderer.color = attackData.projectileColor;
 
         transform.right = direction;
 

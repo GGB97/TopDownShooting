@@ -19,6 +19,7 @@ public class HealthSystem : MonoBehaviour
     public AudioClip damageClip;
 
     public float CurrentHealth { get; private set; }
+    public float Health;
 
     public float MaxHealth => _statsHandler.CurrentStats.maxHealth;
 
@@ -42,6 +43,7 @@ public class HealthSystem : MonoBehaviour
                 OnInvincibilityEnd?.Invoke();
             }
         }
+        Health = CurrentHealth;
     }
 
     public bool ChangeHealth(float change)

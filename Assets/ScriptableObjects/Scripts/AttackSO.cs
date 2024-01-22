@@ -15,7 +15,7 @@ public class AttackSO : ScriptableObject
     [Header("Attack Info")] // <- 변수 위에 정보표시를 위한 키워드
     public float size;
     public float delay;
-    public float poewr;
+    public float power;
     public float speed;
     public LayerMask target;
 

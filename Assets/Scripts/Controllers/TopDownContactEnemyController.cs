@@ -87,7 +87,7 @@ public class TopDownContactEnemyController : TopDownEnemyController
     void ApplyHealthChange()
     {
         AttackSO attackSO = Stats.CurrentStats.attackSO;
-        bool hasBeenChanged = _collidingTargetHealthSystem.ChangeHealth(-attackSO.poewr);
+        bool hasBeenChanged = _collidingTargetHealthSystem.ChangeHealth(-attackSO.power);
         if(attackSO.isOnKnockback && _collidingMovement != null)
         {
             _collidingMovement.ApplyKnockback(transform, attackSO.knockbackPower, attackSO.knockbackTime);

@@ -33,7 +33,7 @@ public class TopDownShooting : MonoBehaviour
     {
         RangedAttackData rangedAttackData = attackSO as RangedAttackData;
         float projecttilesAngleSpace = rangedAttackData.multipleProjectilesAngel;
-        int numberOfProjectilesPerShot = rangedAttackData.numberoProjectilesPerShot;
+        int numberOfProjectilesPerShot = rangedAttackData.numberofProjectilesPerShot;
 
         float minAngle = -(numberOfProjectilesPerShot / 2f) * projecttilesAngleSpace + 0.5f * rangedAttackData.multipleProjectilesAngel;
 

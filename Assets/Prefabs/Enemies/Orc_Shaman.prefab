@@ -201,6 +201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPos: {fileID: 2879567797744335223}
+  shootingClip: {fileID: 8300000, guid: d46323e22e74e46baa241cbf48c85671, type: 3}
 --- !u!114 &358675345543783039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,6 +215,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthChangeDelay: 0.5
+  damageClip: {fileID: 8300000, guid: b43d102aac6b145468dcaa94a5cccae1, type: 3}
+  Health: 0
 --- !u!114 &2980765871482378420
 MonoBehaviour:
   m_ObjectHideFlags: 0

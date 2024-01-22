@@ -39,7 +39,7 @@ Transform:
   m_Children:
   - {fileID: 6838168911100674245}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1797728426514648454
 BoxCollider2D:
@@ -218,7 +218,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthChangeDelay: 0.5
-  damageClip: {fileID: 0}
+  damageClip: {fileID: 8300000, guid: b43d102aac6b145468dcaa94a5cccae1, type: 3}
+  Health: 0
 --- !u!114 &1858774658744127135
 MonoBehaviour:
   m_ObjectHideFlags: 0
