@@ -30,7 +30,7 @@ public class TopDownRangeEnemyController : TopDownEnemyController
         {
             if (distance <= shootRange) // 사거리 이내에 있으면
             {
-                int layerMaskTarget = Stats.CurrentStates.attackSO.target;
+                int layerMaskTarget = Stats.CurrentStats.attackSO.target;
                 RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, 11f,
                     (1 << LayerMask.NameToLayer("Level")) | layerMaskTarget);
 

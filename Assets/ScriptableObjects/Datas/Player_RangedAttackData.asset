@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   size: 1
   delay: 0.15
-  poewr: 2
+  poewr: 1
   speed: 10
   target:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   isOnKnockback: 1
-  isOnKnockPower: 5
-  isOnKnockTime: 0.1
+  knockbackPower: 2
+  knockbackTime: 0.5
   bulletNameTag: Arrow
   duration: 5
   spread: 4

@@ -17,9 +17,11 @@ GameObject:
   - component: {fileID: 7361799372119677272}
   - component: {fileID: 1021366725371127633}
   - component: {fileID: 3063163626176065929}
-  m_Layer: 0
+  - component: {fileID: 358675345543783039}
+  - component: {fileID: 2980765871482378420}
+  m_Layer: 6
   m_Name: Orc_Shaman
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,7 +41,7 @@ Transform:
   - {fileID: 1764439955338364979}
   - {fileID: 7105171153218560704}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &613060512041780404
 BoxCollider2D:
@@ -199,6 +201,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPos: {fileID: 2879567797744335223}
+--- !u!114 &358675345543783039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475181057555305267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbec05568ecabf942a9ad4998dda1b34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthChangeDelay: 0.5
+--- !u!114 &2980765871482378420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475181057555305267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5efcd69e26d64b48a43bb92adc567d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2001056601461360440
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,7 +235,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7105171153218560704}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeaponPivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,7 +270,7 @@ GameObject:
   - component: {fileID: 1764439955338364979}
   - component: {fileID: 6116156514028695551}
   - component: {fileID: 5260675465025308119}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MainSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -347,7 +374,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2879567797744335223}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BulletSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -379,7 +406,7 @@ GameObject:
   m_Component:
   - component: {fileID: 739273283038482860}
   - component: {fileID: 6075471277801077127}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeaponSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

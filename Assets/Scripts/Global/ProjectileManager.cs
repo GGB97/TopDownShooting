@@ -30,4 +30,15 @@ public class ProjectileManager : MonoBehaviour
 
         obj.SetActive(true);
     }
+
+    public void CreateImpactParticleesAtPosition(Vector3 pos, RangedAttackData attackData)
+    {
+        _impactParticleSystem.transform.position = pos;
+        ParticleSystem.EmissionModule em = _impactParticleSystem.emission;
+
+        em.SetBurst(0, new ParticleSystem.Burst(0, Mathf.Ceil(attackData.size * 5)));
+        ParticleSystem.MainModule mainModule = _impactParticleSystem.main;
+        mainModule.startSpeedMultiplier = attackData.size * 10f;
+        _impactParticleSystem.Play();
+    }
 }

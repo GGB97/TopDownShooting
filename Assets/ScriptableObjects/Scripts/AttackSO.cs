@@ -21,6 +21,6 @@ public class AttackSO : ScriptableObject
 
     [Header("Knock Back Info")]
     public bool isOnKnockback;
-    public float isOnKnockPower;
-    public float isOnKnockTime;
+    public float knockbackPower;
+    public float knockbackTime;
 }
